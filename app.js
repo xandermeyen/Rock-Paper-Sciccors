@@ -17,9 +17,15 @@ const game = () => {
         const options = document.querySelectorAll('.options button');
         const playerHand = document.querySelectorAll('.player-hand');
         const computerHand = document.querySelectorAll('.computer-hand');
+
+        const computerOptions = ['rock', 'paper', 'sciccors'];
+
+        const computerNumber = Math.random() * 3;
+        console.log(computerNumber);
     }
 
 startGame();
+playMatch();
 
 };
 
