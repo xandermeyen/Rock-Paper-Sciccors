@@ -18,7 +18,7 @@ const game = () => {
         const playerHand = document.querySelectorAll('.player-hand');
         const computerHand = document.querySelectorAll('.computer-hand');
 
-        const computerOptions = ['rock', 'paper', 'sciccors'];
+        const computerOptions = ['Rock', 'Paper', 'Sciccors'];
 
         options.forEach(options=>{
                 options.addEventListener('click', function(){
@@ -41,8 +41,8 @@ const compareHands = (playerChoice, computerChoice) =>{
     }
 
     
-    if(playerChoice === 'rock'){
-        if(computerChoice === 'sciccors' ){
+    if(playerChoice === 'Rock'){
+        if(computerChoice === 'Sciccors' ){
             winner.textContent = 'Player wins';
             return;
         }else{
@@ -51,8 +51,8 @@ const compareHands = (playerChoice, computerChoice) =>{
         }
     }
 
-    if(playerChoice === 'paper'){
-        if(computerChoice === 'sciccors' ){
+    if(playerChoice === 'Paper'){
+        if(computerChoice === 'Sciccors' ){
             winner.textContent = 'AI wins';
             return;
         }else{
@@ -61,8 +61,8 @@ const compareHands = (playerChoice, computerChoice) =>{
         }
     }
 
-    if(playerChoice === 'sciccors'){
-        if(computerChoice === 'rock' ){
+    if(playerChoice === 'Sciccors'){
+        if(computerChoice === 'Rock' ){
             winner.textContent = 'AI wins';
             return;
         }else{
