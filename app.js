@@ -23,7 +23,7 @@ hands.forEach(hand =>{
     hand.addEventListener('animationend', function(){
         this.style.animation = "";
     });
-})
+});
 
         const computerOptions = ['Rock', 'Paper', 'Sciccors'];
 
@@ -34,9 +34,8 @@ hands.forEach(hand =>{
                     
                     compareHands(this.textContent, computerChoise);
 
-                   playerHand.src = `./assets/${this.textContent}.png`; 
-                   computerHand.src = `./assets/${computerChoice}.png`;
-
+                    playerHand.src = `./assets/${this.textContent}.png`; 
+                    computerHand.src = `./assets/${computerChoice}.png`;
                    playerHand.style.animation = "shakePlayer 2s ease";
                    computerHand.style.animation = "shakeComputer 2s ease";
             });
