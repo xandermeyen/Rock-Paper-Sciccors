@@ -45,19 +45,20 @@ hands.forEach(hand =>{
                     });
                   });
                 };
+
     const updateScore = () => {
         const playerScore = document.querySelector('.player-score p');
         const computerScore = document.querySelector('.computer-score p');
         playerScore.textContent = pScore;
         computerScore.textContent = cScore;
-    }
+    };
 
 const computerHand = (playerChoice, computerChoice) =>{
     const winner = document.querySelector('.winner');
     if(playerChoice === computerChoice){
         winner.textContent = 'It is a tie :(';
         return;
-    }
+    };
 
     
     if(playerChoice === 'Rock'){
@@ -72,7 +73,7 @@ const computerHand = (playerChoice, computerChoice) =>{
             updateScore();
             return;
         }
-    }
+    };
 
     if(playerChoice === 'Paper'){
         if(computerChoice === 'Sciccors' ){
@@ -86,7 +87,7 @@ const computerHand = (playerChoice, computerChoice) =>{
             updateScore();
             return;
         }
-    }
+    };
 
     if(playerChoice === 'Sciccors'){
         if(computerChoice === 'Rock' ){
@@ -100,7 +101,7 @@ const computerHand = (playerChoice, computerChoice) =>{
             updateScore();
             return;
         }
-    }
+    };
 };
 
 startGame();
