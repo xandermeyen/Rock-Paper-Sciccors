@@ -15,8 +15,8 @@ const game = () => {
 
     const playMatch = () => {
         const options = document.querySelectorAll('.options button');
-        const playerHand = document.querySelectorAll('.player-hand');
-        const computerHand = document.querySelectorAll('.computer-hand');
+        const playerHand = document.querySelector('.player-hand');
+        const computerHand = document.querySelector('.computer-hand');
         const hands = document.querySelectorAll('.hands img');
 
 hands.forEach(hand =>{
@@ -46,12 +46,12 @@ hands.forEach(hand =>{
                   });
                 };
 
-    const updateScore = () => {
-        const playerScore = document.querySelector('.player-score p');
-        const computerScore = document.querySelector('.computer-score p');
-        playerScore.textContent = pScore;
-        computerScore.textContent = cScore;
-    };
+                const updateScore = () => {
+                    const playerScore = document.querySelector(".player-score p");
+                    const computerScore = document.querySelector(".computer-score p");
+                    playerScore.textContent = pScore;
+                    computerScore.textContent = cScore;
+                  };
 
 const computerHand = (playerChoice, computerChoice) =>{
     const winner = document.querySelector('.winner');
